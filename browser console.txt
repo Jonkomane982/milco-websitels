@@ -1,0 +1,138 @@
+JQMIGRATE: Migrate is installed, version 3.4.1
+2index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1 Store "jetpack-connection" is already registered.
+g @ index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1Understand this error
+index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1 Store "jetpack-modules" is already registered.
+g @ index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1Understand this error
+index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1 Store "jetpack-connection" is already registered.
+g @ index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1Understand this error
+index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1 Store "jetpack-modules" is already registered.
+g @ index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1Understand this error
+index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1 Store "jetpack-ai/logo-generator" is already registered.
+g @ index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1Understand this error
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "syntaxhighlighter/code" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+2index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1 Store "jetpack-modules" is already registered.
+g @ index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1Understand this error
+index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1 Store "jetpack-connection" is already registered.
+g @ index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1Understand this error
+index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1 Store "jetpack-modules" is already registered.
+g @ index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1Understand this error
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 `wp.data.select( 'core/editor' ).getBlocks` is deprecated since version 5.3 and will be removed in version 6.2. Please use `wp.data.select( 'core/block-editor' ).getBlocks` instead.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "crowdsignal-forms/poll" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "crowdsignal-forms/vote" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "crowdsignal-forms/vote-item" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "crowdsignal-forms/applause" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "crowdsignal-forms/nps" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "crowdsignal-forms/feedback" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "crowdsignal-forms/cs-embed" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "jetpack/layout-grid" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "jetpack/layout-grid-column" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "jetpack/rating-priciness" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "jetpack/rating-spiciness" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+2index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1 Store "jetpack-modules" is already registered.
+g @ index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1Understand this error
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "jetpack/timeline-item" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "a8c/blog-posts" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Block with API version 2 or lower is deprecated since version 6.9. See: https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/block-migration-for-iframe-editor-compatibility/ Note: The block "a8c/posts-carousel" is registered with API version 1. This means that the post editor may work as a non-iframe editor. Since all editors are planned to work as iframes in the future, set the `apiVersion` field to 3 and test the block inside the iframe editor.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1 Store "jetpack-connection" is already registered.
+g @ index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1Understand this error
+index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1 Store "jetpack-modules" is already registered.
+g @ index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1Understand this error
+index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1 Store "jetpack-connection" is already registered.
+g @ index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1Understand this error
+index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1 Store "jetpack-modules" is already registered.
+g @ index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1Understand this error
+index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1 Store "core/abilities" is already registered.
+g @ index.min.js?m=1778170586i&ver=148d59ef2548b2513db8:1Understand this error
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 Declaring non-string block descriptions is deprecated since version 6.2.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 select( 'core/edit-site' ).getPage is deprecated since version 6.8.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+site-editor.php?canvas=edit&p=%2F:708 Is PII URL: false
+site-editor.php?canvas=edit&p=%2F:724 maybeIdentifyUser: 8516899e1583064a90fe0ec6104aae14f29ba7dd3f8e98a192ce65c6701ff76e
+index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75 all-css-2-1 was added to the iframe incorrectly. Please use block.json or enqueue_block_assets to add styles to the iframe. <link crossorigin=​"anonymous" rel=​"stylesheet" id=​"all-css-2-1" href=​"/​_static/​??-eJytkksOwjAMRC9E6xYE7QZxlnxMMCRO5SRUvT1BrGBLlvbMPFm2YV06YuOLxQQmJbAq3chETn0g7mtnB78WZavUaSVflprJyBkWXxxxAldqqVFcVQThuT/​0Yz+ALuQtpLz5Ny2GJXJNpU/​nb+AieEVBNtiKWEcMim0rnPbRPDq0lKM0RXrSomRrxAx1QtWVTL7ZZVTOKNwK13SDK1mHvz94CedxmuZxGo7z6f4CiWQn0w==&cssminify=yes" type=​"text/​css" media=​"all">​
+U @ index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75Understand this warning
+index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75 all-css-4-1 was added to the iframe incorrectly. Please use block.json or enqueue_block_assets to add styles to the iframe. <link crossorigin=​"anonymous" rel=​"stylesheet" id=​"all-css-4-1" href=​"/​_static/​??-eJylU9tOwzAM/​SFabyDYXhCfgtLEqzxyqWKnU/​8e97JpqAwN7fH42McntgOnrjIuUATLDIeUA9eKakVPoJxNUTAKdL60FBnaorDB3CqTEfrnl3pbb6Ap5B2wDB4ZGp/​sV+WpySYPgI4k5YdFR5mKSXAOPKw3PtXIxeValKL1xWnmOJimiKTIvyccGYLaM+gxjDauQefNgLny2Bo73Feu3DW+bWrKqnrC021jFFqT0bCKWfmJVuOb7qA6D7Enh6nLqI0MMwov/​NR1VRvKpfCI0hk9AA2dOpvCQkBIKZ7Jzx6jSxlMkaRrELKrMuBsl5XNB6XamEWHGZKjA1kjpCv5k7zH5v/​cTT8EHLHMjfl839rpI7xvd7v9drd53b8dvwFJL0I2&cssminify=yes" type=​"text/​css" media=​"all">​
+U @ index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75Understand this warning
+index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75 all-css-6-1 was added to the iframe incorrectly. Please use block.json or enqueue_block_assets to add styles to the iframe. <link crossorigin=​"anonymous" rel=​"stylesheet" id=​"all-css-6-1" href=​"/​_static/​??-eJzFkEEOwjAMBD9EMBQhToinIOOEEkjiKnZa8XsKtAgkQOLEMWvv7jjQNYY4qUsKsZgmlNongaPTBuk0vCEyp1Hbti5ZzoBFOaKqp8f2nnMUsF4UrplIepOARF53TMAzF532gwm8J6DMnRVfJwxD7q74YMFZr5y/​OeuMLSpm49IBEzk7OHeB6fTNOCL2UtcQxx+vH20gmYbKe8ytWPpG64zoObhP+r/​h7n/​7kfF5fEXdxPV8tZrPqmqxrI4XzR3enA==&cssminify=yes" type=​"text/​css" media=​"all">​
+U @ index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75Understand this warning
+index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75 all-css-8-1 was added to the iframe incorrectly. Please use block.json or enqueue_block_assets to add styles to the iframe. <link crossorigin=​"anonymous" rel=​"stylesheet" id=​"all-css-8-1" href=​"/​_static/​??-eJydjjsOgCAQBS8krr+YWBjPgrjZoAiEXWK8vTbGWssp3ryBIyoTvKAXiC6T9QyUb5wxkZpdMBvDihK12ZTTZ8iiKNkFWE6HpWEu4K8CFyshfXckLdYT/​0145u/​9tI9137VNVQ11t177J2fY&cssminify=yes" type=​"text/​css" media=​"all">​
+U @ index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75Understand this warning
+index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75 all-css-10-1 was added to the iframe incorrectly. Please use block.json or enqueue_block_assets to add styles to the iframe. <link crossorigin=​"anonymous" rel=​"stylesheet" id=​"all-css-10-1" href=​"/​_static/​??-eJyNjtsOgkAMRH9IrLfAk/​FTyF4aLLLthnbBzxeI+OzjnMycDMy5CsKGbJBKlYfSESv0aNmF1zdDEuGdtRNylBFcMUnOjMKvPVFEySOqgi80RPCDLBgj2TLYgsJWAuKI72NQPcD/​D1risGv06UbirvLFTHjV4rz6Hul+bpr6Vp+ul6b/​AJbHU+Y=&cssminify=yes" type=​"text/​css" media=​"all">​
+U @ index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75Understand this warning
+index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75 global-styles-css-custom-properties-inline-css was added to the iframe incorrectly. Please use block.json or enqueue_block_assets to add styles to the iframe. <style id=​"global-styles-css-custom-properties-inline-css">​…​</style>​
+U @ index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75Understand this warning
+index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75 all-css-24-1 was added to the iframe incorrectly. Please use block.json or enqueue_block_assets to add styles to the iframe. <link crossorigin=​"anonymous" rel=​"stylesheet" id=​"all-css-24-1" href=​"/​_static/​??-eJzF0dtuwyAMBuAXGnNPSq6mPkpFiBXRgo1i07RvP9a1Uw/​Z1t0sV0j8PnwCGJJxTIqkELNJIXeeBLaoybqdKVdDchzPAURmuoSbPVLLPdisHK2qdw9tIL2DJvvQwueYJrDbicHSqmVvJm15IIOt1zLpiZpXJ/​ICk6DVRwyecFR7F07B7AI3NhjRY0C5RY5F/​0skHOSUnd+rHJ1JLPol/​bViWrCzPWfB8B33Ln8G+zcjHhR7Kr8YywZ7JR0vuDh/​TD+U6/​g2r+tqVc2Wi3r7Dtb+jqM=&cssminify=yes" type=​"text/​css" media=​"all">​
+U @ index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75Understand this warning
+index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75 all-css-30-1 was added to the iframe incorrectly. Please use block.json or enqueue_block_assets to add styles to the iframe. <link crossorigin=​"anonymous" rel=​"stylesheet" id=​"all-css-30-1" href=​"/​_static/​??-eJy9kM8OwiAMh19I1iwemAfjoyxYGscGlIzin7cXoovx6sFT0y/​N92sLt6RcRF8sZcCcofamyKRwIly64GJX6a5h5CgUBUJRyZeLixlmkmRwefcQmOPGxitFyytUGQcj4vAzbR7J+FZC9WWwLgucPeMCZJ3w+qfIb6jORYRrwm87jPWLryM2g6J7otU1t/​FNdwrHXms9HAbd7+cnJkOPkA==&cssminify=yes" type=​"text/​css" media=​"all">​
+U @ index.min.js?m=1778169583i&ver=9041ae4f01562bcb4d33:75Understand this warning
+index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1 select( 'core/edit-post' ).isInserterOpened is deprecated since version 6.5. Please use select( 'core/editor' ).isInserterOpened instead.
+S @ index.min.js?m=1778170586i&ver=990e85f234fee8f7d446:1Understand this warning
+about:srcdoc:1292 Uncaught SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag.Understand this error
+4about:srcdoc:1231 Uncaught TypeError: window.milcoShowSection is not a function
+    at HTMLButtonElement.onclick (about:srcdoc:1231:115)Understand this error
+about:srcdoc:1219 Uncaught TypeError: window.milcoShowSection is not a function
+    at HTMLLIElement.onclick (about:srcdoc:1219:66)Understand this error
+about:srcdoc:1220 Uncaught TypeError: window.milcoShowSection is not a function
+    at HTMLLIElement.onclick (about:srcdoc:1220:66)Understand this error
+about:srcdoc:1221 Uncaught TypeError: window.milcoShowSection is not a function
+    at HTMLLIElement.onclick (about:srcdoc:1221:66)Understand this error
+about:srcdoc:1222 Uncaught TypeError: window.milcoShowSection is not a function
+    at HTMLLIElement.onclick (about:srcdoc:1222:75)Understand this error
+about:srcdoc:1231 Uncaught TypeError: window.milcoShowSection is not a function
+    at HTMLButtonElement.onclick (about:srcdoc:1231:115)Understand this error
+about:srcdoc:1231 Uncaught TypeError: window.milcoShowSection is not a function
+    at HTMLButtonElement.onclick (about:srcdoc:1231:115)
+onclick @ about:srcdoc:1231Understand this error
+about:srcdoc:1219 Uncaught TypeError: window.milcoShowSection is not a function
+    at HTMLLIElement.onclick (about:srcdoc:1219:66)
+onclick @ about:srcdoc:1219Understand this error
+2about:srcdoc:1220 Uncaught TypeError: window.milcoShowSection is not a function
+    at HTMLLIElement.onclick (about:srcdoc:1220:66)
+onclick @ about:srcdoc:1220Understand this error
+rest-proxy/?v=2.0:21  GET https://public-api.wordpress.com/wpcom/v2/support-interactions?per_page=100&page=1&is_test_mode=false&_envelope=1 net::ERR_NETWORK_CHANGED
+w @ rest-proxy/?v=2.0:21
+R @ rest-proxy/?v=2.0:21
+postMessage
+S @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:42
+b @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:42
+(anonymous) @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:42
+_ @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:42
+l @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:48
+queryFn @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:48
+s @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:69
+_ @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:60
+start @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:60
+fetch @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:69
+#v @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:3
+fetch @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:3
+refetch @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:3
+onFocus @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:69
+(anonymous) @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:69
+(anonymous) @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:69
+batch @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:60
+onFocus @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:69
+(anonymous) @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:48
+await in (anonymous)
+(anonymous) @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:42
+onFocus @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:42
+(anonymous) @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:42
+t @ help-center-gutenberg.min.js?ver=30bf87bee7939bae8f59:42Understand this error
+about:srcdoc:1220 Uncaught TypeError: window.milcoShowSection is not a function
+    at HTMLLIElement.onclick (about:srcdoc:1220:66)
+onclick @ about:srcdoc:1220Understand this error
