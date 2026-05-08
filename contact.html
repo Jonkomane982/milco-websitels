@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — MILCO Lesotho</title>
+    <meta name="description" content="Get in touch with MILCO Lesotho. Visit us at Sefika Complex, Maseru or send us a message.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 60px; }
+        .contact-info-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: -50px; position: relative; z-index: 10; padding: 0 5%; }
+        .info-card { background: var(--white); padding: 30px; border-radius: 16px; box-shadow: var(--shadow); text-align: center; }
+        .info-card i { font-size: 32px; color: var(--accent); margin-bottom: 15px; }
+        .contact-form { background: var(--white); padding: 40px; border-radius: 16px; box-shadow: var(--shadow); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: var(--font-body); }
+        .map-container { border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); height: 100%; min-height: 400px; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="index.html" class="logo-container">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2C10.0589 2 2 10.0589 2 20C2 29.9411 10.0589 38 20 38C29.9411 38 38 29.9411 38 20C38 10.0589 29.9411 20 20 2ZM26.4142 13.5858C28.1716 15.3431 28.1716 18.1883 26.4142 19.9457L20 26.3599L13.5858 19.9457C11.8284 18.1883 11.8284 15.3431 13.5858 13.5858C15.3431 11.8284 18.1883 11.8284 19.9457 13.5858L20 13.6401L20.0543 13.5858C21.8117 11.8284 24.6569 11.8284 26.4142 13.5858Z" fill="#1B4332"/>
+            </svg>
+            <div class="logo-text">
+                <h1>MILCO</h1>
+                <p>Made in Lesotho</p>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html#new-arrivals">New Arrivals</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <a href="notifications.html" class="icon-btn">
+                <i class="fa fa-bell"></i>
+                <span id="notif-badge" class="badge-count">0</span>
+            </a>
+            <a href="cart.html" class="icon-btn">
+                <i class="fa fa-shopping-bag"></i>
+                <span id="cart-count" class="badge-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section style="height: 300px; position: relative; display: flex; align-items: center; justify-content: center; color: var(--background);">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(27, 67, 50, 0.6), rgba(27, 67, 50, 0.6)), url('https://images.unsplash.com/photo-1526958097901-5e6d742d3371?w=1200&q=80'); background-size: cover; background-position: center;"></div>
+        <div style="position: relative; text-align: center;">
+            <h1 style="font-size: 48px; font-family: var(--font-display);">Get In Touch</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- INFO CARDS -->
+    <div class="contact-info-cards">
+        <div class="info-card">
+            <i class="fa fa-map-marker-alt"></i>
+            <h3>Location</h3>
+            <p>Sefika Complex, Maseru<br>Lesotho</p>
+        </div>
+        <div class="info-card">
+            <i class="fa fa-phone"></i>
+            <h3>Phone</h3>
+            <p>+266 5892 1648<br>Mon-Fri, 8am-5pm</p>
+        </div>
+        <div class="info-card">
+            <i class="fa fa-clock"></i>
+            <h3>Hours</h3>
+            <p>Sat: 9am-1pm<br>Sun: Closed</p>
+        </div>
+    </div>
+
+    <main style="padding: 80px 5%;">
+        <div class="contact-grid">
+            <!-- CONTACT FORM -->
+            <div class="contact-form">
+                <h2 style="margin-bottom: 30px; font-family: var(--font-display);">Send us a Message</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="contact-name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" id="contact-email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <select id="contact-subject" required>
+                            <option value="" disabled selected>Choose a subject</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Order Status">Order Status</option>
+                            <li><a href="stakeholders.html">Stakeholders</a></li>
+                            <option value="Product Suggestion">Product Suggestion</option>
+                            <option value="Wholesale">Wholesale/Partnership</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea id="contact-message" required rows="5" placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">Send Message</button>
+                </form>
+            </div>
+
+            <!-- MAP -->
+            <div class="map-container">
+                <!-- Placeholder for Google Maps -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.336427321045!2d27.4833!3d-29.3167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e8d0526e84d33b5%3A0x2727272727272727!2sSefika%20Complex!5e0!3m2!1sen!2sls!4v1234567890123!5m2!1sen!2sls" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <div class="logo-container">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2C10.0589 2 2 10.0589 2 20C2 29.9411 10.0589 38 20 38C29.9411 38 38 29.9411 38 20C38 10.0589 29.9411 20 20 2ZM26.4142 13.5858C28.1716 15.3431 28.1716 18.1883 26.4142 19.9457L20 26.3599L13.5858 19.9457C11.8284 18.1883 11.8284 15.3431 13.5858 13.5858C15.3431 11.8284 18.1883 11.8284 19.9457 13.5858L20 13.6401L20.0543 13.5858C21.8117 11.8284 24.6569 11.8284 26.4142 13.5858Z" fill="#F5F0E8"/>
+                    </svg>
+                    <div class="logo-text">
+                        <h1>MILCO</h1>
+                        <p>Made in Lesotho</p>
+                    </div>
+                </div>
+                <p>Supporting local artisans since 2020.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="stakeholders.html">Stakeholders</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fa fa-phone"></i> +266 5892 1648</p>
+                <p><i class="fa fa-map-marker-alt"></i> Sefika Complex, Maseru</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MILCO Lesotho &middot; Founded by NUL Innovation Hub</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const message = {
+                id: Date.now(),
+                name: document.getElementById('contact-name').value,
+                email: document.getElementById('contact-email').value,
+                subject: document.getElementById('contact-subject').value,
+                text: document.getElementById('contact-message').value,
+                date: new Date().toISOString()
+            };
+
+            const messages = JSON.parse(localStorage.getItem('contactMessages')) || [];
+            messages.push(message);
+            localStorage.setItem('contactMessages', JSON.stringify(messages));
+
+            showToast("Message sent! We'll get back to you within 24 hours.");
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>

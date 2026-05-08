@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MILCO — Made in Lesotho | Authentic Local Products</title>
+    <meta name="description" content="Discover authentic local products from Lesotho's finest artisans and farmers. Shop food, crafts, and home decor.">
+    <meta name="keywords" content="Made in Lesotho, MILCO, local products, food, crafts, Maseru, Lesotho shopping">
+    <meta property="og:title" content="MILCO — Made in Lesotho">
+    <meta property="og:description" content="Discover authentic local products from Lesotho's finest artisans and farmers.">
+    <meta name="author" content="MILCO Lesotho">
+    <link rel="canonical" href="index.html">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="index.html" class="logo-container">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2C10.0589 2 2 10.0589 2 20C2 29.9411 10.0589 38 20 38C29.9411 38 38 29.9411 38 20C38 10.0589 29.9411 2 20 2ZM26.4142 13.5858C28.1716 15.3431 28.1716 18.1883 26.4142 19.9457L20 26.3599L13.5858 19.9457C11.8284 18.1883 11.8284 15.3431 13.5858 13.5858C15.3431 11.8284 18.1883 11.8284 19.9457 13.5858L20 13.6401L20.0543 13.5858C21.8117 11.8284 24.6569 11.8284 26.4142 13.5858Z" fill="#1B4332"/>
+            </svg>
+            <div class="logo-text">
+                <h1>MILCO</h1>
+                <p>Made in Lesotho</p>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html#new-arrivals">New Arrivals</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <a href="notifications.html" class="icon-btn">
+                <i class="fa fa-bell"></i>
+                <span id="notif-badge" class="badge-count">0</span>
+            </a>
+            <a href="cart.html" class="icon-btn">
+                <i class="fa fa-shopping-bag"></i>
+                <span id="cart-count" class="badge-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="position: relative; height: 520px; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--background); overflow: hidden;">
+        <div class="hero-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(27, 67, 50, 0.55), rgba(27, 67, 50, 0.55)), url('background_image.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="hero-content fade-up" style="position: relative; max-width: 800px; padding: 0 20px;">
+            <h1 style="font-size: 56px; margin-bottom: 20px;">Proudly Made in Lesotho 🇱🇸</h1>
+            <p style="font-size: 18px; margin-bottom: 35px;">Discover authentic local products from Lesotho's finest artisans and farmers</p>
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                <a href="#new-arrivals" class="btn btn-outline" style="color: var(--background); border-color: var(--background);">New Arrivals</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats" style="padding: 40px 5%; background: var(--white);">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+            <div class="card" style="padding: 30px; text-align: center;">
+                <i class="fa fa-box-open" style="font-size: 32px; color: var(--accent); margin-bottom: 15px;"></i>
+                <h3 style="font-size: 24px;">50+ Local Products</h3>
+            </div>
+            <div class="card" style="padding: 30px; text-align: center;">
+                <i class="fa fa-smile" style="font-size: 32px; color: var(--accent); margin-bottom: 15px;"></i>
+                <h3 style="font-size: 24px;">200+ Happy Customers</h3>
+            </div>
+            <div class="card" style="padding: 30px; text-align: center;">
+                <i class="fa fa-heart" style="font-size: 32px; color: var(--accent); margin-bottom: 15px;"></i>
+                <h3 style="font-size: 24px;">100% Made in Lesotho</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED CATEGORIES -->
+    <section class="categories" style="padding: 80px 5%;">
+        <h2 style="text-align: center; margin-bottom: 50px; font-size: 36px;">Featured Categories</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+            <a href="shop.html?cat=food" class="card" style="padding: 40px 20px; text-align: center;">
+                <i class="fa fa-wheat-awn" style="font-size: 40px; color: var(--primary); margin-bottom: 20px;"></i>
+                <h3>Food & Agriculture</h3>
+            </a>
+            <a href="shop.html?cat=crafts" class="card" style="padding: 40px 20px; text-align: center;">
+                <i class="fa fa-palette" style="font-size: 40px; color: var(--primary); margin-bottom: 20px;"></i>
+                <h3>Crafts & Textiles</h3>
+            </a>
+            <a href="shop.html?cat=home" class="card" style="padding: 40px 20px; text-align: center;">
+                <i class="fa fa-couch" style="font-size: 40px; color: var(--primary); margin-bottom: 20px;"></i>
+                <h3>Home & Living</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- NEW ARRIVALS -->
+    <section id="new-arrivals" style="padding: 80px 5%; background: var(--cream-card);">
+        <h2 style="text-align: center; margin-bottom: 50px; font-size: 36px; position: relative; display: inline-block; left: 50%; transform: translateX(-50%);">
+            New Arrivals
+            <span style="position: absolute; bottom: -10px; left: 0; width: 60%; height: 4px; background: var(--accent);"></span>
+        </h2>
+        <div id="new-arrivals-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <!-- Rendered via JS -->
+        </div>
+    </section>
+
+    <!-- SUBSCRIPTION FORM -->
+    <section class="subscription" style="padding: 80px 5%; text-align: center;">
+        <div class="card" style="max-width: 800px; margin: 0 auto; padding: 60px 40px;">
+            <h2 style="margin-bottom: 15px;">Stay Updated on New Products</h2>
+            <p style="margin-bottom: 35px; color: var(--muted);">Be the first to know when fresh local goods arrive at MILCO.</p>
+            <form id="subscribe-form" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <input type="text" id="sub-name" placeholder="Your Name" required style="padding: 15px; border-radius: 8px; border: 1px solid #ddd;">
+                <input type="email" id="sub-email" placeholder="Your Email" required style="padding: 15px; border-radius: 8px; border: 1px solid #ddd;">
+                <select id="sub-interest" required style="padding: 15px; border-radius: 8px; border: 1px solid #ddd;">
+                    <option value="" disabled selected>Select Interest</option>
+                    <option value="Food">Food & Agriculture</option>
+                    <option value="Skincare">Skincare & Beauty</option>
+                    <option value="Crafts">Crafts & Textiles</option>
+                    <option value="All">All Categories</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ABOUT MILCO -->
+    <section class="about" style="padding: 80px 5%;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+            <div class="fade-up">
+                <h2 style="font-size: 36px; margin-bottom: 25px;">Supporting Lesotho's Artisans</h2>
+                <p style="margin-bottom: 20px;">MILCO was founded by the <strong>NUL Innovation Hub</strong> to bridge the gap between local producers and modern markets. Our mission is to promote sustainable economic growth in Lesotho by showcasing the exceptional quality of "Made in Lesotho" products.</p>
+                <p style="margin-bottom: 20px;">We operate on a unique four-in-one structure: supporting local farmers, providing a retail platform for artisans, fostering innovation through research, and ensuring high-quality standards for every product sold.</p>
+                <a href="stakeholders.html" class="btn btn-outline">Meet Our Partners</a>
+            </div>
+            <div class="card" style="border-radius: 16px; overflow: hidden;">
+                <img src="products/Mokorotlo hat.jpg" alt="Traditional Mokorotlo Hat" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <div class="logo-container">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2C10.0589 2 2 10.0589 2 20C2 29.9411 10.0589 38 20 38C29.9411 38 38 29.9411 38 20C38 10.0589 29.9411 2 20 2ZM26.4142 13.5858C28.1716 15.3431 28.1716 18.1883 26.4142 19.9457L20 26.3599L13.5858 19.9457C11.8284 18.1883 11.8284 15.3431 13.5858 13.5858C15.3431 11.8284 18.1883 11.8284 19.9457 13.5858L20 13.6401L20.0543 13.5858C21.8117 11.8284 24.6569 11.8284 26.4142 13.5858Z" fill="#F5F0E8"/>
+                    </svg>
+                    <div class="logo-text">
+                        <h1>MILCO</h1>
+                        <p>Made in Lesotho</p>
+                    </div>
+                </div>
+                <p>Supporting local artisans since 2020.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="stakeholders.html">Stakeholders</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fa fa-phone"></i> +266 5892 1648</p>
+                <p><i class="fa fa-map-marker-alt"></i> Sefika Complex, Maseru</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MILCO Lesotho &middot; Founded by NUL Innovation Hub</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Specific Index Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            // Render New Arrivals
+            const newArrivalsGrid = document.getElementById('new-arrivals-grid');
+            const newArrivals = productsData.filter(p => p.isNew).slice(0, 3);
+            newArrivalsGrid.innerHTML = newArrivals.map(p => createProductCard(p)).join('');
+
+            // Subscription Form
+            document.getElementById('subscribe-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('sub-name').value;
+                const email = document.getElementById('sub-email').value;
+                const interest = document.getElementById('sub-interest').value;
+
+                const subscribers = JSON.parse(localStorage.getItem('subscribers')) || [];
+                subscribers.push({ name, email, interest, date: new Date().toISOString() });
+                localStorage.setItem('subscribers', JSON.stringify(subscribers));
+
+                showToast(`You're subscribed! We'll notify you of new ${interest} products.`);
+                e.target.reset();
+            });
+        });
+    </script>
+</body>
+</html>

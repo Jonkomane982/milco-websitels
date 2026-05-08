@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications — MILCO Lesotho</title>
+    <meta name="description" content="Check your MILCO notifications for order updates and new product arrivals.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .notif-item { display: flex; gap: 20px; padding: 25px; border-bottom: 1px solid rgba(27, 67, 50, 0.1); transition: var(--transition); }
+        .notif-item:hover { background: var(--white); }
+        .notif-item.unread { border-left: 4px solid var(--accent); background: #fffcf5; }
+        .notif-icon { width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; background: var(--background); color: var(--primary); font-size: 20px; flex-shrink: 0; }
+        .notif-content { flex-grow: 1; }
+        .notif-time { font-size: 12px; color: var(--muted); margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="index.html" class="logo-container">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2C10.0589 2 2 10.0589 2 20C2 29.9411 10.0589 38 20 38C29.9411 38 38 29.9411 38 20C38 10.0589 29.9411 20 20 2ZM26.4142 13.5858C28.1716 15.3431 28.1716 18.1883 26.4142 19.9457L20 26.3599L13.5858 19.9457C11.8284 18.1883 11.8284 15.3431 13.5858 13.5858C15.3431 11.8284 18.1883 11.8284 19.9457 13.5858L20 13.6401L20.0543 13.5858C21.8117 11.8284 24.6569 11.8284 26.4142 13.5858Z" fill="#1B4332"/>
+            </svg>
+            <div class="logo-text">
+                <h1>MILCO</h1>
+                <p>Made in Lesotho</p>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html#new-arrivals">New Arrivals</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <a href="notifications.html" class="icon-btn active">
+                <i class="fa fa-bell"></i>
+                <span id="notif-badge" class="badge-count">0</span>
+            </a>
+            <a href="cart.html" class="icon-btn">
+                <i class="fa fa-shopping-bag"></i>
+                <span id="cart-count" class="badge-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main style="padding: 60px 5%; max-width: 900px; margin: 0 auto;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
+            <h1 style="font-size: 36px;">Notifications</h1>
+            <button class="btn btn-outline" onclick="markAllAsRead()">Mark all as read</button>
+        </div>
+
+        <div id="notif-list" class="card">
+            <!-- Rendered via JS -->
+        </div>
+
+        <div id="empty-notif" style="display: none; text-align: center; padding: 100px 20px;">
+            <i class="fa fa-bell-slash" style="font-size: 64px; color: var(--muted); margin-bottom: 20px;"></i>
+            <h2>No notifications yet</h2>
+            <p style="color: var(--muted);">We'll let you know when something important happens.</p>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <div class="logo-container">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2C10.0589 2 2 10.0589 2 20C2 29.9411 10.0589 38 20 38C29.9411 38 38 29.9411 38 20C38 10.0589 29.9411 20 20 2ZM26.4142 13.5858C28.1716 15.3431 28.1716 18.1883 26.4142 19.9457L20 26.3599L13.5858 19.9457C11.8284 18.1883 11.8284 15.3431 13.5858 13.5858C15.3431 11.8284 18.1883 11.8284 19.9457 13.5858L20 13.6401L20.0543 13.5858C21.8117 11.8284 24.6569 11.8284 26.4142 13.5858Z" fill="#F5F0E8"/>
+                    </svg>
+                    <div class="logo-text">
+                        <h1>MILCO</h1>
+                        <p>Made in Lesotho</p>
+                    </div>
+                </div>
+                <p>Supporting local artisans since 2020.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="stakeholders.html">Stakeholders</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fa fa-phone"></i> +266 5892 1648</p>
+                <p><i class="fa fa-map-marker-alt"></i> Sefika Complex, Maseru</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MILCO Lesotho &middot; Founded by NUL Innovation Hub</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function renderNotifications() {
+            const list = document.getElementById('notif-list');
+            const empty = document.getElementById('empty-notif');
+
+            if (notifications.length === 0) {
+                list.style.display = 'none';
+                empty.style.display = 'block';
+                return;
+            }
+
+            list.innerHTML = notifications.map((n, index) => `
+                <div class="notif-item ${n.read ? '' : 'unread'}">
+                    <div class="notif-icon">
+                        <i class="fa ${getNotifIcon(n.type)}"></i>
+                    </div>
+                    <div class="notif-content">
+                        <h3 style="font-size: 16px;">${n.title}</h3>
+                        <p style="font-size: 14px; color: var(--text);">${n.message}</p>
+                        <p class="notif-time">${n.time}</p>
+                    </div>
+                    ${!n.read ? `<button class="btn btn-outline" style="padding: 5px 15px; font-size: 12px;" onclick="markAsRead(${index})">Read</button>` : ''}
+                </div>
+            `).join('');
+        }
+
+        function getNotifIcon(type) {
+            switch(type) {
+                case 'Order Confirmed': return 'fa-check-circle';
+                case 'New Product': return 'fa-star';
+                case 'Back in Stock': return 'fa-box';
+                case 'Recommendation': return 'fa-heart';
+                default: return 'fa-bell';
+            }
+        }
+
+        function markAsRead(index) {
+            notifications[index].read = true;
+            localStorage.setItem('notifications', JSON.stringify(notifications));
+            renderNotifications();
+            updateNotifBadge();
+        }
+
+        function markAllAsRead() {
+            notifications.forEach(n => n.read = true);
+            localStorage.setItem('notifications', JSON.stringify(notifications));
+            renderNotifications();
+            updateNotifBadge();
+        }
+
+        document.addEventListener('DOMContentLoaded', renderNotifications);
+    </script>
+</body>
+</html>

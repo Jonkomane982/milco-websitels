@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart — MILCO Lesotho</title>
+    <meta name="description" content="Review your shopping cart and support local Basotho artisans.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        table { width: 100%; border-collapse: collapse; margin-top: 30px; }
+        th { text-align: left; padding: 20px; border-bottom: 2px solid var(--primary); color: var(--primary); font-family: var(--font-display); }
+        td { padding: 20px; border-bottom: 1px solid rgba(27, 67, 50, 0.1); vertical-align: middle; }
+        .cart-img { width: 80px; height: 80px; object-fit: cover; border-radius: 8px; }
+        .qty-control { display: flex; align-items: center; gap: 10px; }
+        .qty-btn { background: var(--background); border: 1px solid var(--primary); width: 30px; height: 30px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+        .qty-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+        .summary-panel { background: var(--white); padding: 30px; border-radius: 16px; box-shadow: var(--shadow); height: fit-content; }
+        .summary-row { display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 16px; }
+        .summary-total { border-top: 1px solid #ddd; padding-top: 15px; margin-top: 15px; font-weight: bold; font-size: 20px; color: var(--primary); }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="index.html" class="logo-container">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2C10.0589 2 2 10.0589 2 20C2 29.9411 10.0589 38 20 38C29.9411 38 38 29.9411 38 20C38 10.0589 29.9411 20 20 2ZM26.4142 13.5858C28.1716 15.3431 28.1716 18.1883 26.4142 19.9457L20 26.3599L13.5858 19.9457C11.8284 18.1883 11.8284 15.3431 13.5858 13.5858C15.3431 11.8284 18.1883 11.8284 19.9457 13.5858L20 13.6401L20.0543 13.5858C21.8117 11.8284 24.6569 11.8284 26.4142 13.5858Z" fill="#1B4332"/>
+            </svg>
+            <div class="logo-text">
+                <h1>MILCO</h1>
+                <p>Made in Lesotho</p>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html#new-arrivals">New Arrivals</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <a href="notifications.html" class="icon-btn">
+                <i class="fa fa-bell"></i>
+                <span id="notif-badge" class="badge-count">0</span>
+            </a>
+            <a href="cart.html" class="icon-btn">
+                <i class="fa fa-shopping-bag"></i>
+                <span id="cart-count" class="badge-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main style="padding: 60px 5%;">
+        <h1 style="font-size: 36px; margin-bottom: 40px;">Your Cart (<span id="cart-items-count">0</span>)</h1>
+
+        <div id="cart-content" style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px;">
+            <!-- CART ITEMS -->
+            <div class="card" style="padding: 20px;">
+                <table id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Unit Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items-body">
+                        <!-- Rendered via JS -->
+                    </tbody>
+                </table>
+                <div id="empty-cart-msg" style="display: none; text-align: center; padding: 60px 20px;">
+                    <i class="fa fa-shopping-cart" style="font-size: 64px; color: var(--muted); margin-bottom: 20px;"></i>
+                    <h2>Your cart is empty</h2>
+                    <p style="margin-bottom: 30px; color: var(--muted);">Looks like you haven't added anything to your cart yet.</p>
+                    <a href="shop.html" class="btn btn-primary">Start Shopping</a>
+                </div>
+            </div>
+
+            <!-- SUMMARY PANEL -->
+            <div id="summary-container">
+                <div class="summary-panel">
+                    <h2 style="margin-bottom: 25px;">Order Summary</h2>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">M0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery</span>
+                        <span id="delivery-fee">M25</span>
+                    </div>
+                    <div id="free-delivery-msg" style="font-size: 12px; color: var(--primary); margin-top: -10px; margin-bottom: 15px; font-weight: 500;">
+                        Free delivery on orders over M300!
+                    </div>
+                    <div class="summary-row summary-total">
+                        <span>Total</span>
+                        <span id="grand-total">M0</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="window.location.href='checkout.html'" style="width: 100%; margin-top: 20px; padding: 15px;">Proceed to Checkout</button>
+                    <a href="shop.html" style="display: block; text-align: center; margin-top: 15px; font-size: 14px; color: var(--muted);"><i class="fa fa-arrow-left"></i> Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <div class="logo-container">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2C10.0589 2 2 10.0589 2 20C2 29.9411 10.0589 38 20 38C29.9411 38 38 29.9411 38 20C38 10.0589 29.9411 20 20 2ZM26.4142 13.5858C28.1716 15.3431 28.1716 18.1883 26.4142 19.9457L20 26.3599L13.5858 19.9457C11.8284 18.1883 11.8284 15.3431 13.5858 13.5858C15.3431 11.8284 18.1883 11.8284 19.9457 13.5858L20 13.6401L20.0543 13.5858C21.8117 11.8284 24.6569 11.8284 26.4142 13.5858Z" fill="#F5F0E8"/>
+                    </svg>
+                    <div class="logo-text">
+                        <h1>MILCO</h1>
+                        <p>Made in Lesotho</p>
+                    </div>
+                </div>
+                <p>Supporting local artisans since 2020.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="stakeholders.html">Stakeholders</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fa fa-phone"></i> +266 5892 1648</p>
+                <p><i class="fa fa-map-marker-alt"></i> Sefika Complex, Maseru</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MILCO Lesotho &middot; Founded by NUL Innovation Hub</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function renderCart() {
+            const body = document.getElementById('cart-items-body');
+            const cartContent = document.getElementById('cart-content');
+            const emptyCartMsg = document.getElementById('empty-cart-msg');
+            const cartTable = document.getElementById('cart-table');
+            const summary = document.getElementById('summary-container');
+            const itemsCount = document.getElementById('cart-items-count');
+
+            if (cart.length === 0) {
+                cartTable.style.display = 'none';
+                summary.style.display = 'none';
+                emptyCartMsg.style.display = 'block';
+                cartContent.style.gridTemplateColumns = '1fr';
+                itemsCount.textContent = '0';
+                return;
+            }
+
+            body.innerHTML = cart.map((item, index) => `
+                <tr>
+                    <td>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <img src="${item.image}" class="cart-img" alt="${item.name}">
+                            <span style="font-weight: 500;">${item.name}</span>
+                        </div>
+                    </td>
+                    <td>M${item.price}</td>
+                    <td>
+                        <div class="qty-control">
+                            <button class="qty-btn" onclick="updateQty(${index}, -1)" ${item.quantity <= 1 ? 'disabled' : ''}>-</button>
+                            <span style="width: 20px; text-align: center;">${item.quantity}</span>
+                            <button class="qty-btn" onclick="updateQty(${index}, 1)">+</button>
+                        </div>
+                    </td>
+                    <td style="font-weight: bold; color: var(--primary);">M${item.price * item.quantity}</td>
+                    <td>
+                        <button onclick="removeItem(${index})" style="background: none; border: none; color: #ff4d4d; cursor: pointer; font-size: 18px;">
+                            <i class="fa fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+            `).join('');
+
+            // Totals
+            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const delivery = subtotal > 300 ? 0 : 25;
+            
+            document.getElementById('subtotal').textContent = `M${subtotal}`;
+            document.getElementById('delivery-fee').textContent = delivery === 0 ? 'FREE' : `M${delivery}`;
+            document.getElementById('grand-total').textContent = `M${subtotal + delivery}`;
+            document.getElementById('free-delivery-msg').style.display = subtotal > 300 ? 'none' : 'block';
+            itemsCount.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
+        }
+
+        function updateQty(index, delta) {
+            cart[index].quantity += delta;
+            localStorage.setItem('cart', JSON.stringify(cart));
+            renderCart();
+            updateCartCount();
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            renderCart();
+            updateCartCount();
+            showToast('Item removed from cart.');
+        }
+
+        document.addEventListener('DOMContentLoaded', renderCart);
+    </script>
+</body>
+</html>
