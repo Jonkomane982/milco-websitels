@@ -1,0 +1,17 @@
+# Milco Website
+
+This is the MILCO E-Commerce Platform project.
+
+## Project Structure
+
+- `index.html`: Main landing page
+- `shop.html`: Product listing page
+- `cart.html`: Shopping cart page
+- `checkout.html`: Checkout process
+- `contact.html`: Contact page
+- `stakeholders.html`: Stakeholders information
+- `notifications.html`: Notifications page
+- `style.css`: Global styles
+- `script.js`: Frontend logic
+- `products/`: Directory containing product images
+- `milco-theme/`: WordPress theme files
